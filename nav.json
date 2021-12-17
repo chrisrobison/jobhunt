@@ -1,0 +1,70 @@
+{
+    "sidemenu": [{
+            "title": "Resume",
+            "link": "#",
+            "icon": "fas fa-tachometer-alt",
+            "_children": [{
+                    "title": "HTML Version",
+                    "link": "resume/resume.html",
+                    "target": "iframe",
+                    "icon": "fas fa-globe"
+                },
+                {
+                    "title": "Text Version",
+                    "link": "resume/resume_text.html",
+                    "target": "iframe",
+                    "icon": "fas fa-pencil-alt"
+                },
+                {
+                    "title": "PDF Version",
+                    "link": "resume/resume.pdf",
+                    "target": "iframe",
+                    "icon": "fas fa-file-pdf"
+                }
+
+            ]
+        },
+        {
+            "title": "Jobs",
+            "link": "jobs/index.html",
+            "icon": "fas fa-search-dollar",
+			"_children": [
+				{
+					"title": "Jobs",
+					"link": "jobs/",
+					"icon": "fas fa-list"
+				},{
+					"title": "View Job",
+					"link": "jobs/view-job.html",
+					"icon": "fas fa-clipboard-list"
+				},{
+					"title": "Add Job",
+					"link": "jobs/add-job.html",
+					"icon": "fas fa-cogs"
+				},{
+					"title": "Edit Job",
+					"link": "jobs/edit-job.html",
+					"icon": "fas fa-edit"
+				}
+			]
+        },
+        {
+            "title": "Cover Letter Tool",
+            "link": "coverletter/",
+            "icon": "fas fa-edit"
+        },
+        {
+            "title": "Questions List",
+            "link": "questions.html",
+            "icon": "fas fa-th"
+        },
+        {
+            "title": "Search Jobs",
+            "link": "search/index.html",
+            "icon": "fas fa-search"
+        }
+    ],
+    "topmenu": [
+
+    ]
+}

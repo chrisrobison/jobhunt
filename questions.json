@@ -1,0 +1,60 @@
+{
+    "Questions": {
+        "Company": [
+            "How would you describe the company's culture?",
+            "What is your favorite thing about working for this company?",
+            "How do you see this company evolving over the next five years?",
+            "How would the person in this role contribute to this vision?",
+            "How do you think the company defines and demonstrates its values?",
+            "What qualities and attributes make for a successful employee in the company?",
+            "Who do you consider your top competitor, and why?",
+            "How are you better?",
+            "What are the biggest opportunities currently being presented to the company?",
+            "What are the biggest challenges the company is facing right now?",
+            "How is the company addressing these challenges?",
+            "What's your staff turnover rate and how are you trying to reduce it?",
+            "What makes people stay at this company?"
+        ],
+        "Role": [
+            "Can you elaborate on the day-to-day responsibilities of this job?",
+            "Who would I be reporting to?",
+            "Will I have an opportunity to meet the person I'd report to during the interview process?",
+            "How would I collaborate with my supervisor?",
+            "What do you think is the most challenging aspect of the job?",
+            "What does the ideal candidate for this role look like?",
+            "What do you think are the most important qualities for the person in this role to possess?",
+            "Beyond the technical skills, what soft skills do you think will serve the company and position best?",
+            "Is this a new position? If not, why did the person before me leave this role?",
+            "How have people previously succeeded in this role?",
+            "How has this position evolved?",
+            "What are your expectations for this role during the first 30 to 60 days?",
+            "How do you evaluate success?",
+            "Is there a 'typical' career path for someone in this role?",
+            "How do I compare with other candidates you've interviewed for this role?",
+            "Do you have any hesitations about my qualifications?",
+            "Have I answered all your questions?"
+        ],
+        "Wrap-up": [
+            "What is your timeline and what are the next steps?",
+            "Do you need me to clarify or elaborate on anything regarding my suitability for the position?",
+            "Is there anything else I can provide to help you with your decision?",
+            "Has this company changed your original career path?",
+            "What's one of the most interesting projects you've worked on here?",
+            "What's been your best moment at this company?",
+            "Where do you see yourself in five years?",
+            "Is there anyone else I should meet with?",
+            "Are there any other important aspects of the job that we haven't covered?"
+        ]
+    },
+    "Tips": [
+        "Ask questions that require more than a simple 'yes' or 'no', but that are not too broad.",
+        "Don't ask questions with obvious answers or answers you could find on the company's website.",
+        "Ask no more than 3 questions but have up to 10 prepared.",
+        "Strive to ask less-obvious questions related to the position and company.",
+        "Keep questions concise and don't waste time.",
+        "Ask your questions while still seated. Asking questions as you're being walked out can make you look nervous or diffident.",
+        "If all potential questions have been answered during the course of the interview, review those questions and restate the answers.",
+        "Avoid questions on personal benefits from accepting the job.",
+        "Wait to ask about salary or benefits until the negotiation phase of the process with HR."
+    ]
+}

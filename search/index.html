@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Search | JobHunt</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-collapse">
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="container-fluid">
+                    <h2 class="text-center display-4">Search</h2>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <form action="simple-results.html">
+                                <div class="input-group">
+                                    <input id='q' name='q' type="search" class="form-control form-control-lg" placeholder="Keywords">
+                                    <input id='l' name='l' type="search" class="form-control form-control-lg" placeholder="Location">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-lg btn-default">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <div class='row'>
+                        <div class="col-md-8 offset-md-2">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Search Results</h3>
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div id='results' class="card-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    </div>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- jQuery UI 1.11.4 -->
+    <!--script src="assets/jquery-ui/jquery-ui.min.js"></script-->
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <!--script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap 4 -->
+    <!--script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script-->
+
+    <!-- AdminLTE App -->
+    <script src="../assets/js/adminlte.min.js"></script>
+    <script>
+        const $ = str => document.querySelector(str);
+        const $$ = str => document.querySelectorAll(str);
+
+        (function() {
+            const app = {
+                init: function() {
+                    $("form").addEventListener("submit", function(e) {
+                        app.doSearch(e);
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    });
+
+                    app.state.loaded = true;
+                },
+                doSearch: function(e) {
+                    const url = `api.php?q=${$("#q").value}&l=${$("#l").value}`;
+                    fetch(url).then(response => response.json()).then(data => {
+                        console.dir(data);
+                        app.state.data = data;
+                        app.showResults(data);
+                        const clean = app.cleanArrObj(data);
+                    });
+                },
+                cleanObj: function(obj) {
+                    const cleaned = {};
+
+                    const keys = Object.keys(obj);
+                    keys.forEach(key => {
+                        if (obj[key]) {
+							if (typeof obj[key] === 'object') {
+								cleaned[key] = app.cleanObj(obj[key]);
+							} else {
+                            	cleaned[key] = obj[key];
+							}
+                        }
+                    });
+                    return cleaned;
+                },
+                cleanArrObj: function(arr) {
+                    let clean = [];
+
+                    arr.forEach(item => clean.push(app.cleanObj(item)));
+
+                    console.log("clean:", clean);
+                    return arr;
+                },
+                state: {
+                    loaded: false,
+                    data: []
+                },
+                showResults: function(results) {
+                    let out = '';
+
+                    results.forEach((item) => {
+                        out += `<div class='item'><h3>${item.title}</h3>${item.company?item.company:''}, ${item.location}<br>Source: ${item.source}<blockquote style='display:none;'>${item.description}</blockquote></div>`;
+                    });
+                    $("#results").innerHTML = out;
+                }
+            }
+            window.app = app;
+            app.init();
+        })();
+    </script>
+</body>
+
+</html>

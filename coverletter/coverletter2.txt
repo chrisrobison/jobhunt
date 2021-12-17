@@ -1,0 +1,56 @@
+
+October 25, 2021
+
+
+Christopher Robison
+San Francisco, CA 94112
+(415) 810-6991
+christopher.robison@gmail.com
+
+
+<%COMPANY%>
+<%LOCATION%>
+attn: <%CONTACT%>
+
+RE: <%POSITION%> position
+
+Dear <%CONTACT%>,
+
+I am writing in response to your posting for a <%POSITION%> 
+position. I am a highly motivated and progress-focused technologist with a 
+long-standing background in the industry. I have extensive experience with 
+every aspect of the software development process. With a track record of 
+initiative and dependability, I have devised strategic initiatives which I 
+believe will prove valuable to your company.
+
+Throughout the course of my career, I have learned how to architect and 
+develop infrastructure and software to address a companies immediate needs. 
+I have experience managing high-performing teams and understand the value 
+derived from shipping code rapidly. I excel at working on challenging problems 
+and know  how to delegate effectively, helping developers with opportunities 
+to improve their skills and grow their careers.  I am a capable and consistent 
+problem-solver skilled at prioritizing and managing projects with proficiency. 
+I have excellent communication and people skills which has earned me the nick-
+name "The Personable Programmer".
+
+In my previous roles, I have contributed problem-solving, leadership, and 
+security planning toward team efforts  and business improvements. I am 
+progressive minded and in tune with new developments in my field. I have 
+proven to be effective and collaborative with strong communication talents. 
+I enjoy collective brainstorming sessions which allow me to coordinate 
+activities to achieve a common goal.
+
+Please take a moment to review my attached resume and credentials. I believe 
+you will find my qualifications to be extensive and relevant. I would greatly 
+appreciate the opportunity to speak with you regarding my candidacy for this 
+position.
+
+Thank you for taking the time to review my qualifications. I understand first-
+hand the difficulties associated with the hiring process and feel honored to 
+be considered. 
+
+Sincerely,
+
+
+
+Christopher Robison

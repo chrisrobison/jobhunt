@@ -1,0 +1,1673 @@
+{
+    "packages": [
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.5.5",
+            "version_normalized": "6.5.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
+                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.6.1",
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.17.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+                "psr/log": "^1.1"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "time": "2020-06-16T21:01:06+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.5-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "support": {
+                "issues": "https://github.com/guzzle/guzzle/issues",
+                "source": "https://github.com/guzzle/guzzle/tree/6.5"
+            },
+            "install-path": "../guzzlehttp/guzzle"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "1.5.1",
+            "version_normalized": "1.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "fe752aedc9fd8fcca3fe7ad05d419d32998a06da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/fe752aedc9fd8fcca3fe7ad05d419d32998a06da",
+                "reference": "fe752aedc9fd8fcca3fe7ad05d419d32998a06da",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^4.4 || ^5.1"
+            },
+            "time": "2021-10-22T20:56:57+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "support": {
+                "issues": "https://github.com/guzzle/promises/issues",
+                "source": "https://github.com/guzzle/promises/tree/1.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/promises",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../guzzlehttp/promises"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.8.3",
+            "version_normalized": "1.8.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "1afdd860a2566ed3c2b0b4a3de6e23434a79ec85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/1afdd860a2566ed3c2b0b4a3de6e23434a79ec85",
+                "reference": "1afdd860a2566ed3c2b0b4a3de6e23434a79ec85",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0",
+                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "ext-zlib": "*",
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
+            },
+            "suggest": {
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
+            },
+            "time": "2021-10-05T13:56:00+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/1.8.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../guzzlehttp/psr7"
+        },
+        {
+            "name": "jobapis/jobs-careerbuilder",
+            "version": "2.0.3",
+            "version_normalized": "2.0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-careerbuilder.git",
+                "reference": "42f69648afdc7f54ed771d641d58ff101997c09e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-careerbuilder/zipball/42f69648afdc7f54ed771d641d58ff101997c09e",
+                "reference": "42f69648afdc7f54ed771d641d58ff101997c09e",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.2",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-11-01T20:40:15+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Careerbuilder Jobs API.",
+            "homepage": "https://github.com/jobapis/jobs-careerbuilder",
+            "keywords": [
+                "api client",
+                "careerbuilder",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-careerbuilder/issues",
+                "source": "https://github.com/jobapis/jobs-careerbuilder/tree/master"
+            },
+            "install-path": "../jobapis/jobs-careerbuilder"
+        },
+        {
+            "name": "jobapis/jobs-careercast",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-careercast.git",
+                "reference": "a1ea25018fbfaa73f80578e61f85c039fa4681a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-careercast/zipball/a1ea25018fbfaa73f80578e61f85c039fa4681a4",
+                "reference": "a1ea25018fbfaa73f80578e61f85c039fa4681a4",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-10-07T00:00:25+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Careercast's Jobs RSS feed.",
+            "homepage": "https://github.com/JobBrander/jobs-careercast",
+            "keywords": [
+                "api client",
+                "careercast",
+                "jobs",
+                "object",
+                "rss client"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-careercast/issues",
+                "source": "https://github.com/jobapis/jobs-careercast/tree/master"
+            },
+            "install-path": "../jobapis/jobs-careercast"
+        },
+        {
+            "name": "jobapis/jobs-careerjet",
+            "version": "0.1.0",
+            "version_normalized": "0.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-careerjet.git",
+                "reference": "2914987c021dc96c64ec29320b07c3fd9a2f45f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-careerjet/zipball/2914987c021dc96c64ec29320b07c3fd9a2f45f4",
+                "reference": "2914987c021dc96c64ec29320b07c3fd9a2f45f4",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-11-09T23:26:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with the Careerjet Jobs API.",
+            "homepage": "https://github.com/jobapis/jobs-careerjet",
+            "keywords": [
+                "api client",
+                "careerjet",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-careerjet/issues",
+                "source": "https://github.com/jobapis/jobs-careerjet/tree/master"
+            },
+            "install-path": "../jobapis/jobs-careerjet"
+        },
+        {
+            "name": "jobapis/jobs-common",
+            "version": "2.1.2",
+            "version_normalized": "2.1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-common.git",
+                "reference": "e35bf885998252c83e3018600e9ef9dfac78a5ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-common/zipball/e35bf885998252c83e3018600e9ef9dfac78a5ba",
+                "reference": "e35bf885998252c83e3018600e9ef9dfac78a5ba",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "dunglas/php-schema": "0.4.*",
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2017-01-21T23:16:05+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "http://www.karllhughes.com"
+                }
+            ],
+            "description": "Making it simple to integrate your application with job api providers.",
+            "homepage": "http://jobapis.com",
+            "keywords": [
+                "api client",
+                "job boards",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-common/issues",
+                "source": "https://github.com/jobapis/jobs-common/tree/master"
+            },
+            "install-path": "../jobapis/jobs-common"
+        },
+        {
+            "name": "jobapis/jobs-dice",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-dice.git",
+                "reference": "b58cdda8a5e78f431d129450114add6988fcb5fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-dice/zipball/b58cdda8a5e78f431d129450114add6988fcb5fa",
+                "reference": "b58cdda8a5e78f431d129450114add6988fcb5fa",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-09-08T00:54:18+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Dice Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-dice",
+            "keywords": [
+                "api client",
+                "dice",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-dice/issues",
+                "source": "https://github.com/jobapis/jobs-dice/tree/master"
+            },
+            "install-path": "../jobapis/jobs-dice"
+        },
+        {
+            "name": "jobapis/jobs-github",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-github.git",
+                "reference": "1461e7862864b0d38bf0005ff13782c5f9fd965c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-github/zipball/1461e7862864b0d38bf0005ff13782c5f9fd965c",
+                "reference": "1461e7862864b0d38bf0005ff13782c5f9fd965c",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-09-08T01:47:54+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Github Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-github",
+            "keywords": [
+                "api client",
+                "github",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-github/issues",
+                "source": "https://github.com/jobapis/jobs-github/tree/1.0.0"
+            },
+            "install-path": "../jobapis/jobs-github"
+        },
+        {
+            "name": "jobapis/jobs-govt",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-govt.git",
+                "reference": "d089fb1c0b9c0898cfc4bab180e1015b0cec582c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-govt/zipball/d089fb1c0b9c0898cfc4bab180e1015b0cec582c",
+                "reference": "d089fb1c0b9c0898cfc4bab180e1015b0cec582c",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2018-08-16T11:25:38+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with the Government Jobs API.",
+            "homepage": "https://github.com/jobapis/jobs-govt",
+            "keywords": [
+                "api client",
+                "government jobs",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-govt/issues",
+                "source": "https://github.com/jobapis/jobs-govt/tree/master"
+            },
+            "install-path": "../jobapis/jobs-govt"
+        },
+        {
+            "name": "jobapis/jobs-ieee",
+            "version": "0.1.0",
+            "version_normalized": "0.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-ieee.git",
+                "reference": "d0127c9e911341bbf5e2311727ff2946bb9942c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-ieee/zipball/d0127c9e911341bbf5e2311727ff2946bb9942c8",
+                "reference": "d0127c9e911341bbf5e2311727ff2946bb9942c8",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-11-15T15:20:54+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with the IEEE JobSite API.",
+            "homepage": "https://github.com/jobapis/jobs-ieee",
+            "keywords": [
+                "api client",
+                "ieee",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-ieee/issues",
+                "source": "https://github.com/jobapis/jobs-ieee/tree/master"
+            },
+            "install-path": "../jobapis/jobs-ieee"
+        },
+        {
+            "name": "jobapis/jobs-indeed",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-indeed.git",
+                "reference": "c4bfab52be4bb4d254e2900a2d1c129064fad37c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-indeed/zipball/c4bfab52be4bb4d254e2900a2d1c129064fad37c",
+                "reference": "c4bfab52be4bb4d254e2900a2d1c129064fad37c",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.1.2",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2017-01-21T23:26:00+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "http://www.karllhughes.com"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Indeed Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-indeed",
+            "keywords": [
+                "api client",
+                "indeed",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-indeed/issues",
+                "source": "https://github.com/jobapis/jobs-indeed/tree/1.1.0"
+            },
+            "install-path": "../jobapis/jobs-indeed"
+        },
+        {
+            "name": "jobapis/jobs-jobinventory",
+            "version": "0.1.0",
+            "version_normalized": "0.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-jobinventory.git",
+                "reference": "0022bfef1580293a65b3f643b09babee03ebe170"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-jobinventory/zipball/0022bfef1580293a65b3f643b09babee03ebe170",
+                "reference": "0022bfef1580293a65b3f643b09babee03ebe170",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-10-29T19:05:03+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Jobinventory's RSS Feed.",
+            "homepage": "https://github.com/jobapis/jobs-jobinventory",
+            "keywords": [
+                "api client",
+                "jobinventory",
+                "jobs",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-jobinventory/issues",
+                "source": "https://github.com/jobapis/jobs-jobinventory/tree/master"
+            },
+            "install-path": "../jobapis/jobs-jobinventory"
+        },
+        {
+            "name": "jobapis/jobs-jobs2careers",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-jobs2careers.git",
+                "reference": "6727954018927f6ab375f6f5b03b0bc6598b4de4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-jobs2careers/zipball/6727954018927f6ab375f6f5b03b0bc6598b4de4",
+                "reference": "6727954018927f6ab375f6f5b03b0bc6598b4de4",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2017-02-14T18:26:03+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with the Jobs2Careers API.",
+            "homepage": "https://github.com/jobapis/jobs-jobs2careers",
+            "keywords": [
+                "api client",
+                "jobs",
+                "jobs2careers",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-jobs2careers/issues",
+                "source": "https://github.com/jobapis/jobs-jobs2careers/tree/master"
+            },
+            "install-path": "../jobapis/jobs-jobs2careers"
+        },
+        {
+            "name": "jobapis/jobs-juju",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-juju.git",
+                "reference": "0f1f95e5265f8975cb50ee5ffca59c282f63a614"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-juju/zipball/0f1f95e5265f8975cb50ee5ffca59c282f63a614",
+                "reference": "0f1f95e5265f8975cb50ee5ffca59c282f63a614",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-10-04T02:24:12+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Juju Jobs API.",
+            "homepage": "https://github.com/jobapis/jobs-juju",
+            "keywords": [
+                "api client",
+                "jobs",
+                "juju",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-juju/issues",
+                "source": "https://github.com/jobapis/jobs-juju/tree/2.0.0"
+            },
+            "install-path": "../jobapis/jobs-juju"
+        },
+        {
+            "name": "jobapis/jobs-monster",
+            "version": "0.1.0",
+            "version_normalized": "0.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-monster.git",
+                "reference": "9eaf3bd78614233db6dc300c10227f54c08b2f7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-monster/zipball/9eaf3bd78614233db6dc300c10227f54c08b2f7a",
+                "reference": "9eaf3bd78614233db6dc300c10227f54c08b2f7a",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2017-01-06T20:26:22+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Monster.com's RSS Feed.",
+            "homepage": "https://github.com/jobapis/jobs-monster",
+            "keywords": [
+                "api client",
+                "jobs",
+                "monster",
+                "monster.com",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-monster/issues",
+                "source": "https://github.com/jobapis/jobs-monster/tree/master"
+            },
+            "install-path": "../jobapis/jobs-monster"
+        },
+        {
+            "name": "jobapis/jobs-multi",
+            "version": "1.1.1",
+            "version_normalized": "1.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-multi.git",
+                "reference": "53883ce700915928cee850a7d581a1940f711554"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-multi/zipball/53883ce700915928cee850a7d581a1940f711554",
+                "reference": "53883ce700915928cee850a7d581a1940f711554",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-careerbuilder": "^2.0.3",
+                "jobapis/jobs-careercast": "^1.0.1",
+                "jobapis/jobs-careerjet": "^0.1.0",
+                "jobapis/jobs-common": "^2.1.1",
+                "jobapis/jobs-dice": "^1.0.0",
+                "jobapis/jobs-github": "^1.0.0",
+                "jobapis/jobs-govt": "^1.0.0",
+                "jobapis/jobs-ieee": "^0.1.0",
+                "jobapis/jobs-indeed": "^1.0.0",
+                "jobapis/jobs-jobinventory": "^0.1.0",
+                "jobapis/jobs-jobs2careers": "^2.0.0",
+                "jobapis/jobs-juju": "^2.0.0",
+                "jobapis/jobs-monster": "^0.1.0",
+                "jobapis/jobs-stackoverflow": "^0.1.0",
+                "jobapis/jobs-usajobs": "^0.2.0",
+                "jobapis/jobs-ziprecruiter": "^1.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2017-05-17T16:27:50+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "http://www.karllhughes.com"
+                }
+            ],
+            "description": "Making it easy to get jobs from multiple job boards.",
+            "homepage": "http://jobapis.com",
+            "keywords": [
+                "api client",
+                "job boards",
+                "jobs",
+                "multiple job boards"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-multi/issues",
+                "source": "https://github.com/jobapis/jobs-multi/tree/master"
+            },
+            "install-path": "../jobapis/jobs-multi"
+        },
+        {
+            "name": "jobapis/jobs-stackoverflow",
+            "version": "0.1.0",
+            "version_normalized": "0.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-stackoverflow.git",
+                "reference": "daf781aadb288ad91601d1173c7dc83447009ed0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-stackoverflow/zipball/daf781aadb288ad91601d1173c7dc83447009ed0",
+                "reference": "daf781aadb288ad91601d1173c7dc83447009ed0",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-11-29T18:25:34+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Stack Overflows's Career RSS Feed.",
+            "homepage": "https://github.com/jobapis/jobs-stackoverflow",
+            "keywords": [
+                "api client",
+                "jobs",
+                "object",
+                "stack overflow"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-stackoverflow/issues",
+                "source": "https://github.com/jobapis/jobs-stackoverflow/tree/master"
+            },
+            "install-path": "../jobapis/jobs-stackoverflow"
+        },
+        {
+            "name": "jobapis/jobs-usajobs",
+            "version": "0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-usajobs.git",
+                "reference": "a1dbbcf2b3de368899ceffde8a37fbafc3d9ee34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-usajobs/zipball/a1dbbcf2b3de368899ceffde8a37fbafc3d9ee34",
+                "reference": "a1dbbcf2b3de368899ceffde8a37fbafc3d9ee34",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2016-10-07T00:16:20+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with the USAJOBS API.",
+            "homepage": "https://github.com/jobapis/jobs-usajobs",
+            "keywords": [
+                "api client",
+                "jobs",
+                "object",
+                "usajobs"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-usajobs/issues",
+                "source": "https://github.com/jobapis/jobs-usajobs/tree/master"
+            },
+            "install-path": "../jobapis/jobs-usajobs"
+        },
+        {
+            "name": "jobapis/jobs-ziprecruiter",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jobapis/jobs-ziprecruiter.git",
+                "reference": "f100d99e1c9ec9cd2087b8fa8e7bd7e42b5f4f21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jobapis/jobs-ziprecruiter/zipball/f100d99e1c9ec9cd2087b8fa8e7bd7e42b5f4f21",
+                "reference": "f100d99e1c9ec9cd2087b8fa8e7bd7e42b5f4f21",
+                "shasum": ""
+            },
+            "require": {
+                "jobapis/jobs-common": "^2.0.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "time": "2017-10-04T21:41:29+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "JobApis\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with ZipRecruiter Jobs API.",
+            "homepage": "https://github.com/jobapis/jobs-ziprecruiter",
+            "keywords": [
+                "api client",
+                "jobs",
+                "object",
+                "ziprecruiter"
+            ],
+            "support": {
+                "issues": "https://github.com/jobapis/jobs-ziprecruiter/issues",
+                "source": "https://github.com/jobapis/jobs-ziprecruiter/tree/master"
+            },
+            "install-path": "../jobapis/jobs-ziprecruiter"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2016-08-06T14:39:51+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
+            "install-path": "../psr/http-message"
+        },
+        {
+            "name": "ralouphie/getallheaders",
+            "version": "3.0.3",
+            "version_normalized": "3.0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
+            },
+            "time": "2019-03-08T08:55:37+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
+            "install-path": "../ralouphie/getallheaders"
+        },
+        {
+            "name": "symfony/polyfill-intl-idn",
+            "version": "v1.23.0",
+            "version_normalized": "1.23.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-idn.git",
+                "reference": "65bd267525e82759e7d8c4e8ceea44f398838e65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/65bd267525e82759e7d8c4e8ceea44f398838e65",
+                "reference": "65bd267525e82759e7d8c4e8ceea44f398838e65",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "symfony/polyfill-intl-normalizer": "^1.10",
+                "symfony/polyfill-php72": "^1.10"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "time": "2021-05-27T09:27:20+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laurent Bassin",
+                    "email": "laurent@bassin.info"
+                },
+                {
+                    "name": "Trevor Rowbotham",
+                    "email": "trevor.rowbotham@pm.me"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "idn",
+                "intl",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/polyfill-intl-idn"
+        },
+        {
+            "name": "symfony/polyfill-intl-normalizer",
+            "version": "v1.23.0",
+            "version_normalized": "1.23.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
+                "reference": "8590a5f561694770bdcd3f9b5c69dde6945028e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/8590a5f561694770bdcd3f9b5c69dde6945028e8",
+                "reference": "8590a5f561694770bdcd3f9b5c69dde6945028e8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "time": "2021-02-19T12:13:01+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's Normalizer class and related functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "intl",
+                "normalizer",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/polyfill-intl-normalizer"
+        },
+        {
+            "name": "symfony/polyfill-php72",
+            "version": "v1.23.0",
+            "version_normalized": "1.23.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "9a142215a36a3888e30d0a9eeea9766764e96976"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/9a142215a36a3888e30d0a9eeea9766764e96976",
+                "reference": "9a142215a36a3888e30d0a9eeea9766764e96976",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "time": "2021-05-27T09:17:38+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/polyfill-php72"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

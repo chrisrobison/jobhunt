@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cover Letter Generator</title>
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css2?family=Lexend:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lexend", "Helvetica Neue", "Helvetica", sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        header {
+            background-color: #999;
+            color: #eee;
+            height: 0vh;
+        }
+
+        main {
+            background-color: #333;
+            color: #ddd;
+            height: 100vh;
+            overflow: scroll;
+            display: flex;
+        }
+
+        footer {
+            background-color: #666;
+            color: #eee;
+            height: 0vh;
+        }
+		label {
+			width:5em;
+			display:inline-block;
+			text-align:right;
+			margin-right:.25em;
+		}
+		label:after {
+			content: ":";
+
+		}
+		output {
+			display: inline-block;
+		}
+		output.text {
+			font-family: monospace;
+			white-space: pre;
+		}
+		fieldset {
+			line-height: 2em;
+			padding:0px;
+		}
+		fieldset button {
+			float:right;
+			padding: .5em .5em;
+			margin: .25em;
+			border-radius: .5em;
+			background-color: #0033aa;
+			color:#fff;
+			height: 50px;
+			transition: all 200ms linear;
+			text-transform: uppercase;
+			font-size:24px;
+			font-weight:bold;
+		}
+		fieldset button:active {
+			transform: translateY(2px);	
+			background-color:#aa0000;
+		}
+		fieldset label.nocolon {
+			text-align:left;
+		}
+		fieldset label.nocolon:after {
+			content:'';
+		}
+		.format {
+			text-align: left;
+		}
+		output p {
+			max-width:50em;
+		}
+
+		output > p {
+			margin: 1em 3em;
+		}
+		.letter {
+			background-color:#fff;
+			color:#111;
+			margin: 1em;
+			padding: 1em 2em;
+			width: 50em;
+		}
+		legend {
+			font-size: 1.5em;
+			text-align:center;
+			text-transform: uppercase;
+			font-weight: bold;
+			height: 2em;
+			padding-top:.5em;
+			background-color:#ccc;
+			color:#000;
+			margin-bottom:1em;
+
+		}
+		.copy {
+			display:inline-block;
+			height:50px;
+			width: 50px;
+			background-size: 42px 42px;
+			background-repeat: no-repeat;
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAzIDc5LjE2NDUyNywgMjAyMC8xMC8xNS0xNzo0ODozMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODEyOTA0N0E0M0VBMTFFQ0JBMjNBNzVEMTI0M0I1QTkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODEyOTA0Nzk0M0VBMTFFQ0JBMjNBNzVEMTI0M0I1QTkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjEgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3RUJDNjZGOTQwRDkxMUVDQTY2MUVFNjFGQzY4OUQ4RCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3RUJDNjZGQTQwRDkxMUVDQTY2MUVFNjFGQzY4OUQ4RCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvDQUn0AAAAYUExURWNjY/Ly8rKyso2NjUZGRgAAAP///////5xrw2EAAAAIdFJOU/////////8A3oO9WQAAAPhJREFUeNrUlUsShCAMRAOk4/1vPIIoQYmVTM1meqGF9jMfBGiblLYNQLsbotuYUcU2QfP3mxstiCvC7iUR4RrDBVQ/oVTCBmQKIAXHhT0Rqpc6ABOAlkjGnpLw9HQNSFNukq4TkBmor7hbJzEO6h7B8ndiBRj+nAkGYMoAYMuo4U3/AjxL/TVwb/9XNSTEgMQxIDMGIFbRw1/G8K1LVzoEDSSzSyqdATzX9D39spqNk30CPZ3lr74CMsMD6F0mBiT2AapLBbEadBBfl1SfvPNwle5aQLq5AeBIy7XidFrBFZeRbCCd+pudT8xDca2XU9QDBBUGPgIMAFtxNDsAvGjTAAAAAElFTkSuQmCC");
+			padding: 2px;
+		}
+		#debug {
+			display:inline-block;
+			background-color:#cc000099;
+			color:#ffffff;
+			width:33vw;
+			height:100vh;
+			white-space: pre-wrap;
+		}
+		#JOBS {
+			width:15em;
+			font-size:22px;
+		}
+		.jobs {
+			clear: both;
+		}
+    </style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <main>
+        <fieldset>
+			<form>
+            <legend>Job Details</legend>
+            <label for='COMPANY'>Company</label>
+            <input type='text' id='COMPANY' autocomplete='on' placeholder='XYZ Corp' default='XYZ Corp'><br />
+            <label for='POSITION'>Position</label>
+            <input type='text' id='POSITION' autocomplete='on' placeholder='Position' default='Software Engineering Manager'><br />
+            <label for='LOCATION'>Location</label>
+            <input type='text' id='LOCATION' autocomplete='on' placeholder='Location' value='San Francisco, CA' default='San Francisco, CA'><br />
+            <label for='CONTACT'>Contact</label>
+            <input type='text' id='CONTACT' autocomplete='on' placeholder='Contact' value='Hiring Manager' default='Hiring Manager'><br />
+			
+			<div class='format'>
+				<label>Format</label>
+				<input type='radio' id='html' name='FORMAT' value='html' checked>
+				<label class='nocolon' for='html'>HTML</label> 
+				
+				<input type='radio' id='text' name='FORMAT' value='text'>
+				<label class='nocolon' for='text'>Text</label> 
+				<br/>
+			</div>
+			<button onclick="return app.makePDF()" id='makePDF'>PDF</button>
+			<button onclick="return app.genLetter()" id='genLetter'>Generate</button>
+			<button onclick="return app.copyLetter()" id='copyLetter' class='copy'></button>
+			<div class='jobs'>
+				<label for='JOBS'>Jobs</label>
+				<select id='JOBS'>
+					<option value='new'>New Job</option>
+				</select>
+			</div>
+			</form>
+        </fieldset>
+        <output class='text' id='letter'>
+			
+        </output>
+		<div id='debug'></div>
+    </main>
+
+    <script src='main.js'></script>
+</body>
+
+</html>
