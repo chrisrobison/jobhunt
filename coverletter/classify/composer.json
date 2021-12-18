@@ -1,6 +1,6 @@
 {
-	"require": {
-		"almasaeed2010/adminlte": "3.1.*"
-
-	}
+    "require": {
+        "keyword-extractor/keyword-extractor": "^1.0",
+        "donatello-za/rake-php-plus": "^1.0"
+    }
 }

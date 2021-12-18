@@ -4,8 +4,40 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit00a3ee9a8c13c12cbdd810d6f5040802
+class ComposerStaticInit01a67ab27f7b8f204f60b2f23f579652
 {
+    public static $prefixLengthsPsr4 = array (
+        'K' => 
+        array (
+            'KeywordExtractor\\' => 17,
+        ),
+        'D' => 
+        array (
+            'DonatelloZa\\RakePlus\\' => 21,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'KeywordExtractor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/keyword-extractor/keyword-extractor/src/KeywordExtractor',
+        ),
+        'DonatelloZa\\RakePlus\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/donatello-za/rake-php-plus/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'N' => 
+        array (
+            'NlpTools\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/nlp-tools/nlp-tools/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -13,7 +45,10 @@ class ComposerStaticInit00a3ee9a8c13c12cbdd810d6f5040802
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit00a3ee9a8c13c12cbdd810d6f5040802::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit01a67ab27f7b8f204f60b2f23f579652::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit01a67ab27f7b8f204f60b2f23f579652::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit01a67ab27f7b8f204f60b2f23f579652::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit01a67ab27f7b8f204f60b2f23f579652::$classMap;
 
         }, null, ClassLoader::class);
     }

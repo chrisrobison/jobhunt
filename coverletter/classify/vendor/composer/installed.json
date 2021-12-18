@@ -1,50 +1,171 @@
 {
     "packages": [
         {
-            "name": "almasaeed2010/adminlte",
-            "version": "v3.1.0",
-            "version_normalized": "3.1.0.0",
+            "name": "donatello-za/rake-php-plus",
+            "version": "v1.0.17",
+            "version_normalized": "1.0.17.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ColorlibHQ/AdminLTE.git",
-                "reference": "c641d7f5716ed47e76f70ab16e05ae41420120b8"
+                "url": "https://github.com/Donatello-za/rake-php-plus.git",
+                "reference": "552200673cae344f4f0a1cc329489dbdbb794aa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/c641d7f5716ed47e76f70ab16e05ae41420120b8",
-                "reference": "c641d7f5716ed47e76f70ab16e05ae41420120b8",
+                "url": "https://api.github.com/repos/Donatello-za/rake-php-plus/zipball/552200673cae344f4f0a1cc329489dbdbb794aa7",
+                "reference": "552200673cae344f4f0a1cc329489dbdbb794aa7",
                 "shasum": ""
             },
-            "time": "2021-03-22T07:30:50+00:00",
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "php": ">=5.5.0",
+                "phpunit/phpunit": "~4.0|~5.0"
+            },
+            "time": "2021-06-21T13:48:50+00:00",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.13-dev"
+                }
+            },
             "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DonatelloZa\\RakePlus\\": "src/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Colorlib"
+                    "name": "Don Schoeman",
+                    "email": "ta.maximus@gmail.com"
                 }
             ],
-            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 4",
-            "homepage": "https://adminlte.io/",
+            "description": "Yet another PHP implementation of the Rapid Automatic Keyword Extraction algorithm (RAKE).",
+            "homepage": "https://github.com/Donatello-za/rake-php-plus",
             "keywords": [
-                "JS",
-                "admin",
-                "back-end",
-                "css",
-                "less",
-                "responsive",
-                "template",
-                "theme",
-                "web"
+                "Algorithm",
+                "automatic",
+                "extraction",
+                "keyword",
+                "rake",
+                "rapid"
             ],
             "support": {
-                "issues": "https://github.com/ColorlibHQ/AdminLTE/issues",
-                "source": "https://github.com/ColorlibHQ/AdminLTE/tree/v3.1.0"
+                "issues": "https://github.com/Donatello-za/rake-php-plus/issues",
+                "source": "https://github.com/Donatello-za/rake-php-plus"
             },
-            "install-path": "../almasaeed2010/adminlte"
+            "install-path": "../donatello-za/rake-php-plus"
+        },
+        {
+            "name": "keyword-extractor/keyword-extractor",
+            "version": "v1.0.7",
+            "version_normalized": "1.0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iranianpep/keyword-extractor.git",
+                "reference": "ec450ddcec41dcb1ce4c57766a08bcfe9114b0a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iranianpep/keyword-extractor/zipball/ec450ddcec41dcb1ce4c57766a08bcfe9114b0a2",
+                "reference": "ec450ddcec41dcb1ce4c57766a08bcfe9114b0a2",
+                "shasum": ""
+            },
+            "require": {
+                "nlp-tools/nlp-tools": "^0.1.3",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^9.2",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "time": "2020-06-29T13:38:36+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "KeywordExtractor\\": [
+                        "src/KeywordExtractor"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ehsan Abbasi",
+                    "email": "ehsan.abb@gmail.com"
+                }
+            ],
+            "description": "A package to extract keywords from text",
+            "homepage": "https://github.com/iranianpep/keyword-extractor",
+            "support": {
+                "issues": "https://github.com/iranianpep/keyword-extractor/issues",
+                "source": "https://github.com/iranianpep/keyword-extractor/tree/master"
+            },
+            "install-path": "../keyword-extractor/keyword-extractor"
+        },
+        {
+            "name": "nlp-tools/nlp-tools",
+            "version": "v0.1.3",
+            "version_normalized": "0.1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/angeloskath/php-nlp-tools.git",
+                "reference": "bbccab0f3ca7277bdf7b292ba67ca644efd0cefe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/angeloskath/php-nlp-tools/zipball/bbccab0f3ca7277bdf7b292ba67ca644efd0cefe",
+                "reference": "bbccab0f3ca7277bdf7b292ba67ca644efd0cefe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "time": "2016-11-03T15:34:42+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "NlpTools\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Angelos Katharopoulos",
+                    "email": "angelos@yourse.gr"
+                }
+            ],
+            "description": "NlpTools is a set of php 5.3+ classes for beginner to semi advanced natural language processing work.",
+            "keywords": [
+                "machine learning",
+                "nlp"
+            ],
+            "support": {
+                "issues": "https://github.com/angeloskath/php-nlp-tools/issues",
+                "source": "https://github.com/angeloskath/php-nlp-tools/tree/master"
+            },
+            "install-path": "../nlp-tools/nlp-tools"
         }
     ],
     "dev": true,
