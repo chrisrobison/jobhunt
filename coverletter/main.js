@@ -42,14 +42,14 @@ const $$ = str => document.querySelectorAll(str);
 			app.data.fields.forEach(item => {
 				obj[item] = $(`#${item}`).value;
 				if (!obj[item]) {
-					console.log(`No value provided for ${item}, using default...`);
+					// console.log(`No value provided for ${item}, using default...`);
 					obj[item] = $(`#${item}`).getAttribute('default');
 				}
 			});
 			obj['FORMAT'] = $('input[name="FORMAT"]:checked').value;
 			obj['DATE'] = app.getDate();
 
-			console.dir(obj);
+			// console.dir(obj);
 
 			if (obj['FORMAT'] === 'text') {
 				obj['SIGNATURE'] = '';
@@ -72,7 +72,7 @@ const $$ = str => document.querySelectorAll(str);
 		},
 		transform: function(letter, obj) {
 			letter = letter.replace(/\<\%(\w+)\%\>/g, function(full, match) {
-				console.log(`Replacing key '${match}' with ${obj[match]}`);
+				// console.log(`Replacing key '${match}' with ${obj[match]}`);
 				return obj[match];
 			});
 
