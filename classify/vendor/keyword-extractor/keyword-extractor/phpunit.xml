@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnError="true">
+  <testsuites>
+    <testsuite name="Keyword Extractor Test Suite">
+      <directory>tests/KeywordExtractor/</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">src/KeywordExtractor/</directory>
+      <exclude>
+        <directory>vendor</directory>
+      </exclude>
+    </whitelist>
+  </filter>
+
+  <php>
+    <const name="PHPUNIT_TESTSUITE" value="true"/>
+  </php>
+
+  <!--<logging>-->
+    <!--<log type="coverage-html" target="./log/codeCoverage" charset="UTF-8"-->
+         <!--yui="true" highlight="true"-->
+         <!--lowUpperBound="50" highLowerBound="80"/>-->
+    <!--<log type="testdox-html" target="./log/testdox.html" />-->
+  <!--</logging>-->
+</phpunit>
+
