@@ -1,0 +1,25 @@
+Christopher Robison
+San Francisco, CA
+Email: cdr@netoasis.net
+November 14, 2023
+
+Hiring Manager
+LinkedIn Corp
+San Francisco, CA
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the Senior Software Engineer, Tools position at LinkedIn, as advertised on (wait for it) LinkedIn. With a robust background in software engineering and leadership, coupled with my passion for enhancing developer experiences, I am excited about the opportunity to contribute to the Productivity and Happiness (PH) organization at LinkedIn.
+
+In my recent role as CTO at D. Harris Tours, Inc., I spearheaded the development and implementation of advanced business processes and technologies, crucial in scaling the company’s operations. This role demanded a deep understanding of software design, development, and the ability to lead large-scale, cross-functional projects - skills that directly align with the requirements for your position. Notably, my work involved optimizing route algorithms and automating critical functions such as maintenance notifications and trip confirmations, demonstrating my proficiency in designing systems that significantly improve operational efficiency.
+
+At Conversant, Inc., I led teams in rich media and mobile ad development, where I was responsible for building and maintaining infrastructure that supported millions of transactions daily. This experience honed my skills in large-scale distributed systems, web services, and client-server architectures - all crucial aspects of the role at LinkedIn. Additionally, my involvement in developing a RESTful API for ad serving reflects my ability to create robust and scalable web services.
+
+My academic background in Computer Science, coupled with extensive programming experience in languages like Python, Java, JavaScript, C++, and C#, aligns well with the technical qualifications sought for this role. Furthermore, my experience in Unix environments, containerization, and version control systems (notably Git) positions me well to meet the technical demands of this position.
+
+I am particularly drawn to this role at LinkedIn because of the opportunity to impact the developer community positively. The prospect of contributing to open-source software and engaging with industry-wide communities aligns with my professional aspirations and personal interests. I am enthusiastic about the possibility of bringing my blend of technical expertise and leadership skills to LinkedIn, where I can contribute to creating transformative tools and infrastructure for developers.
+
+Thank you for considering my application. I am looking forward to the opportunity to discuss how my experience and skills would be beneficial to LinkedIn’s goals in improving developer experiences and infrastructure.
+
+Sincerely,
+Christopher Robison

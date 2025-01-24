@@ -59,14 +59,19 @@
 			float:right;
 			padding: .5em .5em;
 			margin: .25em;
-			border-radius: .5em;
-			background-color: #0033aa;
+			border-radius: 4px;
+			background-color: #999;
 			color:#fff;
-			height: 50px;
+			height: 2em;
 			transition: all 200ms linear;
 			text-transform: uppercase;
-			font-size:24px;
+			font-size:3vh;
 			font-weight:bold;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			border: 1px outset #ccc;
+			text-shadow: 2px 2px 2px #0009;
 		}
 		fieldset button:active {
 			transform: translateY(2px);	
@@ -103,9 +108,9 @@
 			height: 2em;
 			padding-top:.5em;
 			background-color:#ccc;
-			color:#000;
+			color:#fff;
 			margin-bottom:1em;
-
+			text-shadow: 2px 2px 0px #0009;
 		}
 		.copy {
 			display:inline-block;
@@ -128,9 +133,17 @@
 			width:15em;
 			font-size:22px;
 		}
+		ul {
+			margin-top:0;
+			margin-bottom: 0;
+		}
+		li {
+			margin-bottom: 0.5em;
+		}
 		.jobs {
 			clear: both;
 		}
+
     </style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -148,7 +161,14 @@
             <input type='text' id='LOCATION' autocomplete='on' placeholder='Location' value='San Francisco, CA' default='San Francisco, CA'><br />
             <label for='CONTACT'>Contact</label>
             <input type='text' id='CONTACT' autocomplete='on' placeholder='Contact' value='Hiring Manager' default='Hiring Manager'><br />
-			
+			<div class='letters'>
+				<label for='LETTERS'>Letters</label>
+				<select id='LETTERS' onchange="app.updateLetter(this.options[this.selectedIndex].value)">
+					<option value='new'>New Letter</option>
+				</select><button onclick="return app.saveLetter()" id="saveLetter">Save</button>
+			</div>
+			<label for='LETTER'>Letter</label>
+			<textarea cols='50' rows='10' id='LETTER'></textarea>
 			<div class='format'>
 				<label>Format</label>
 				<input type='radio' id='html' name='FORMAT' value='html' checked>
@@ -159,7 +179,7 @@
 				<br/>
 			</div>
 			<button onclick="return app.makePDF()" id='makePDF'>PDF</button>
-			<button onclick="return app.genLetter()" id='genLetter'>Generate</button>
+			<button onclick="return app.genLetter()" id='genLetter'>Make Letter</button>
 			<button onclick="return app.copyLetter()" id='copyLetter' class='copy'></button>
 			<div class='jobs'>
 				<label for='JOBS'>Jobs</label>

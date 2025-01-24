@@ -1,0 +1,45 @@
+Christopher Robison  
+San Francisco, CA  
+cdr@cdr2.com  
+(415) 810-6991  
+
+July 17, 2024
+
+Brewster Kahle  
+Internet Archive  
+300 Funston Ave.
+San Francisco, CA 94118  
+
+Dear Mr. Kahle,
+
+My name is Christopher Robison and I am writing to express my interest in the Director of Platform Engineering position at Internet Archive. I came across the Director of Platform Engineering job posting on your website after attending the Dweb Camp event last week. I currently work as the CTO of D Harris Tours, a small transportation company with a fleet of 14 buses but the owner of the company is planning to retire in a few months and will be selling the company, so I have begun the long and arduous process of finding a new job.
+
+I had previously met Wendy Hanamura at a meeting with the Stellar Development Foundation at your headquarters in San Francisco back in April, 2024. She introduced me to Dweb Camp and we ended up scheduling the buses for the event through my company, D Harris Tours. Once I started my job search, the Internet Archive was one of the first places I looked for open positions and I was very excited to see that there was an open position that sounded like it was made specifically for my experience and skillset. I sent Wendy an email asking who the hiring manager would be for the Director of Plaform Engineering role and she replied that it was you, so here I am to "throw my hat in the ring".
+
+I have been a long-time friend and supporter of the Internet Archive and the work you do. From the Wayback Machine to archiving media of all types, I share the IA's position that there should be "universal access to all knowledge". In addition to my extensive technology skills, I have an excellent understanding of copyright law, especially as it pertains to digital media and have been closely following your recent court cases. I understand how important a role the "First-Sale" doctrine has had in equitable access to knowledge and I am appalled at how the publishing industry is basically making and end-run around the one law that has been most influential in keeping knowledge accessible for everyone with their overpriced licensing schemes for ebooks. 
+
+I would love an opportunity to discuss the Director of Platform Engineering role with you as I believe I would be an excellant addition to your team. I have the technical skills, background and experience needed as well as a passion for the free dissemination of knowledge. I'm even familiar with your tech stack thanks to a impromptu tech talk by one of your employees at one of the Friday 
+ afternoon tours. The rest of this letter is basically boilerplate background about me. I can be reached by phone at (415) 810-6991 or email at cdr@cdr2.com. I look forward to hearing from you!
+
+--
+
+With a solid background in software engineering, technical leadership, and operational management, I am eager to bring my skills and experience to your esteemed organization, helping to advance its mission of providing universal access to all knowledge.
+
+Throughout my career, I have successfully led engineering teams, managed large-scale server infrastructures, and implemented best practices in software development and operational stability. My experience as CTO at D. Harris Tours, Inc. and my tenure at Conversant, Inc. have equipped me with the technical expertise and leadership acumen required for this role. 
+
+In my role at D. Harris Tours, Inc., I led the technological transformation of the company, overseeing the development of a comprehensive transportation management system that significantly boosted operational efficiency and revenue. This experience honed my ability to manage cross-functional projects and ensure operational stability in high-volume environments. Additionally, my work at Conversant, Inc. involved developing scalable backend services and maintaining a high-availability infrastructure, further solidifying my capability to lead engineering teams in demanding production settings.
+
+Key qualifications that I bring to this role include:
+
+- Proven track record in managing and mentoring engineering teams, fostering a collaborative and productive work environment.
+- Extensive experience in high-availability, 24x7 production environments, and large-scale server cluster management.
+- Strong proficiency in software development environments, databases, load balancing, monitoring, alerting, and networking.
+- Deep commitment to automation, testing, and leveraging data for decision-making, with a focus on enhancing service reliability and scalability.
+- Excellent communication skills, with the ability to document, disseminate, and share crucial knowledge across engineering and product teams.
+
+My technical proficiency, combined with my leadership experience and passion for the Internet Archive’s mission, make me an ideal candidate for the Director of Platform Engineering position. I am enthusiastic about the opportunity to work closely with the engineering teams at Archive.org, driving service improvement, ensuring operational stability, and championing best practices in software development.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my background, skills, and vision align with the goals of the Internet Archive. Please feel free to contact me at (415) 810-6991 or via email at cdr@cdr2.com to schedule a discussion.
+
+Sincerely,  
+Christopher Robison

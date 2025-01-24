@@ -10,11 +10,27 @@ const $$ = str => document.querySelectorAll(str);
 			fetch("coverletter.txt").then(response => response.text()).then(data => {
 				app.data.letter = data;
 			});
-
+			
+			fetch("api.php?x=letters").then(r=>r.json()).then(data=>{
+				app.data.letters = data;
+				let out = "", name="";
+				data.forEach((file, idx) => {
+					name = file.replace(/^.+\//, '');
+					out += `<option value="${file}">${name}</option>`;
+				});
+				$("#LETTERS").innerHTML += out;
+					
+			});
 			document.onselectionchange = function() { app.getSelectedText(); }
 
 			app.state.loaded = true;
 
+		},
+		updateLetter: function(file) {
+			fetch("api.php?x=letter&letter=" + file).then(r=>r.json()).then(data=>{
+				app.data.letter = data.letter;
+				$("#LETTER").value = data.letter;
+			});
 		},
 		state: {
 			loaded: false
@@ -35,21 +51,47 @@ const $$ = str => document.querySelectorAll(str);
 
 			$("#debug").innerHTML = txt;
 		},
+		saveLetter: function() {
+			app.doSave().then(data=>{
+				console.log("Letter saved");
+				console.dir(data);
+			});
+			return false;
+		},
+		doSave: async function() {
+			let letter = $("#LETTER").value;
+			let out = {"letter": letter};
+			console.dir(out);
+			const response = await fetch("api.php?x=saveLetter", {
+				method: "POST",
+				mode: "cors",
+				cache: "no-cache",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				redirect: "follow",
+				body: JSON.stringify(out)
+			});
+			console.dir(response);
+			console.dir(response.body);
+			return response.json();
+		},
 		genLetter: function() {
 			let obj = {};
-			let letter = app.data.letter.slice();
+			//let letter = app.data.letter.slice();
+			let letter = $("#LETTER").value;
 
 			app.data.fields.forEach(item => {
 				obj[item] = $(`#${item}`).value;
 				if (!obj[item]) {
-					// console.log(`No value provided for ${item}, using default...`);
+					console.log(`No value provided for ${item}, using default...`);
 					obj[item] = $(`#${item}`).getAttribute('default');
 				}
 			});
 			obj['FORMAT'] = $('input[name="FORMAT"]:checked').value;
 			obj['DATE'] = app.getDate();
 
-			// console.dir(obj);
+			 console.dir(obj);
 
 			if (obj['FORMAT'] === 'text') {
 				obj['SIGNATURE'] = '';
@@ -57,7 +99,9 @@ const $$ = str => document.querySelectorAll(str);
 				letter = letter.replace(/(.{80,}?)\s/g, "$1\n");
 				$("#letter").innerText = letter;
 				$("#letter").classList.add('text');
+				console.log("generating text");
 			} else if (obj['FORMAT'] === 'html') {
+				console.log("generating html");
 				obj['SIGNATURE'] = app.data.sig;
 		
 				letter = app.transform(letter, obj);
@@ -71,7 +115,7 @@ const $$ = str => document.querySelectorAll(str);
 			return false;
 		},
 		transform: function(letter, obj) {
-			letter = letter.replace(/\<\%(\w+)\%\>/g, function(full, match) {
+			letter = letter.replace(/\{\{(\w+)\}\}/g, function(full, match) {
 				// console.log(`Replacing key '${match}' with ${obj[match]}`);
 				return obj[match];
 			});

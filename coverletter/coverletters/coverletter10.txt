@@ -1,0 +1,39 @@
+
+{{DATE}}
+
+
+Christopher Robison
+San Francisco, CA 94112
+(415) 810-6991
+christopher.robison@gmail.com
+
+
+{{COMPANY}}
+{{LOCATION}}
+attn: {{CONTACT}}
+
+Subject: Application for position {{POSITION}} at {{COMPANY}}
+
+Dear {{CONTACT}},
+
+I am writing to express my interest in the Software Engineering Manager position at ZipRecruiter, as advertised. As a software engineer with 10 years of experience in the online advertising industry, including 7 years of leadership at Conversant where I led the mobile team, I am confident in my ability to bring value to your esteemed organization.
+
+Your mission to actively connect people to their next great opportunity resonates with me profoundly. The technology-driven marketplace that ZipRecruiter has built is exactly the type of environment where I can leverage my skills in engineering management, high-traffic web application development, and team leadership to make a significant impact.
+
+In my previous role, I had the privilege of owning multiple product lines where I balanced driving business value with maintaining the health of both my team and our tech stack. I have continuously sought to remove roadblocks for my team, implemented processes to streamline our workflows, and actively built a community that fostered personal and professional growth.
+
+Your job description states that the role involves being a "force multiplier for your team." This is exactly how I view effective management. My management philosophy aligns well with your criteria: developing, coaching, and motivating teams to build a strong culture of excellence and ownership. I have successfully partnered with product managers to maintain and execute against roadmaps, thereby ensuring alignment and achievement of business objectives.
+
+I have over 15 years of experience in fast-paced, large-scale software development environments, and 7+ years specifically in software engineering leadership. My experience also includes developing high-traffic, full-stack web applications.
+
+I am particularly excited about the possibility of working at ZipRecruiter because of your focus on innovative solutions to complex problems. With my track record of innovation and problem-solving, I am eager to bring my strategic thinking and execution skills to your team.
+
+Thank you for considering my application. I am looking forward to the possibility of contributing to your team and am available at your convenience for a meeting to discuss my application further.
+
+Sincerely,
+
+{{SIGNATURE}}
+Christopher Robison
+cdr@cdr2.com
+(415) 810-6991
+

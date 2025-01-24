@@ -12,11 +12,12 @@ christopher.robison@gmail.com
 {{LOCATION}}
 attn: {{CONTACT}}
 
-Subject: Application for position {{POSITION}} at {{COMPANY}}
+Subject: Strategic, Collaborative, and Personable Leader Eager to Propel Your Software Engineering Team Forward
+Subject: Application for the Position of Software Engineering Manager - Full Stack at Backblaze
 
 Dear {{CONTACT}},
 
-I am writing to express my interest in the "{{POSITION}}" position at {{COMPANY}}, as advertised. With my extensive experience in software engineering and leadership roles, I am confident in my ability to contribute significantly to your organization.
+I am writing to express my interest in the Software Engineering Manager - Full Stack position at Backblaze, as advertised. With my extensive experience in software engineering and leadership roles, I am confident in my ability to contribute significantly to your organization.
 
 Most recently, I served as the Chief Technology Officer at D. Harris Tours, Inc. Here, I successfully led the development and implementation of business processes and technology that allowed the company to grow from a fleet of two buses to twelve. Notably, I designed and implemented route optimization algorithms, which increased the company's daily revenue by 30%. I also automated various processes including trip confirmations, bus maintenance notifications, and billing and invoicing. I believe these accomplishments underscore my initiative, technical acumen, and my ability to lead successful product-focused teams.
 

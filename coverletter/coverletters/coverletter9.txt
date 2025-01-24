@@ -1,0 +1,16 @@
+Subject: Application for Engineering Manager, Ad Platforms
+
+Dear Hiring Team at Apple,
+
+I am thrilled to apply for the Manager role for the Advertising Platforms group, as listed under Role Number 200478938. With 10 years of experience in the online advertising industry and 7 years of management experience leading the mobile team at Conversant, I am uniquely positioned to contribute to and lead your team.
+
+My expertise aligns perfectly with the key qualifications outlined in the job description. I have a track record of building scalable microservices and data-driven platforms, specialized in mobile advertising. My hands-on experience with technologies like Cassandra, Solr, Kafka, Spark, and Hadoop, as well as cloud-based solutions, will allow me to contribute meaningfully to your Serving team's goals.
+
+In my role at Conversant, I led the mobile team to successfully deliver highly performant and scalable solutions. We thrived in an Agile environment, and I provided the leadership to ensure timely delivery while maintaining high quality and performance standards. My team was often praised for its strong technical leadership, problem-solving abilities, and effective communication across multi-functional units.
+
+Apple's focus on protecting user privacy while delivering effective advertising solutions aligns closely with my own professional ethos. My team and I have implemented various AI/ML algorithms for better targeting and have also successfully incorporated A/B testing to ensure optimum performance. I understand the importance of milliseconds in our line of work, and my previous experience has been geared toward optimizing for speed and scale.
+
+Thank you for considering my application. I am excited about the chance to bring my expertise in online advertising and team leadership to Apple's Advertising Platforms group.
+
+Best Regards,
+Christopher Robison

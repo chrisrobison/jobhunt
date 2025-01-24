@@ -1,0 +1,33 @@
+{{DATE}}
+
+
+Christopher Robison
+San Francisco, CA 94112
+(415) 810-6991
+christopher.robison@gmail.com
+
+
+{{COMPANY}}
+{{LOCATION}}
+attn: {{CONTACT}}
+
+Subject: Experienced Software Engineering Manager Seeking New Challenges
+
+Dear Hiring Team,
+
+I am writing to express my interest in the Manager, Software Engineering position at SiriusXM as posted. As a seasoned professional with over 15 years in the software development industry, I have had the opportunity to lead diverse teams in creating innovative technical solutions for complex business challenges.
+
+In my current role as the Chief Technology Officer at D. Harris Tours, Inc., I have led a geographically dispersed team of engineers in creating and maintaining software applications crucial to our company's operations. Our team has successfully implemented applications used by millions of users daily, similar to SiriusXM's streaming music services.
+
+I have extensive hands-on experience with core technologies, including Node.JS, Jenkins, Nomad, Docker, JavaScript, TypeScript, HTML, CSS, and React. These skills, combined with my robust understanding of engineering software processes, lifecycle methodology, release management, and system verification and testing, make me confident in my ability to contribute to SiriusXM's ambitious goals.
+
+As a leader, I understand the importance of nurturing individual growth within my team. I am dedicated to providing mentorship, goal-setting, and career path guidance to my direct reports, fostering a supportive environment that encourages decision-making and innovation. Moreover, I am committed to improving organizational tools and best practices to ensure efficient software ownership and operation.
+
+Beyond my technical and leadership abilities, I am a highly effective communicator with excellent written and verbal skills. I have a track record of leading technical architecture discussions, identifying complex problems, and taking pride in delivering high-quality work that improves customer experience.
+
+My experience in the media/streaming application domain, coupled with my technical expertise and leadership abilities, aligns with your search for a Manager of Software Engineering. I am excited about the possibility of leading SiriusXM's team of engineers in building the next generation of your JavaScript-based media playback platform.
+
+I look forward to the opportunity to further discuss my potential contribution to your team. Thank you for considering my application.
+
+Best Regards,
+Christopher Robison

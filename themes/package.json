@@ -1,0 +1,19 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonresume-theme-cvstrap": "^0.0.5",
+    "jsonresume-theme-elegant-mobile": "^0.0.3",
+    "jsonresume-theme-fresh": "^0.0.3",
+    "jsonresume-theme-markdown": "^1.0.2",
+    "jsonresume-theme-spartacus-prime": "^1.0.6",
+    "jsonresume-themeutils": "^1.4.3"
+  }
+}

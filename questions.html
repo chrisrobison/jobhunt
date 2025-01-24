@@ -4,23 +4,28 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..800&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" sizes="any"><!-- 32×32 -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
         body {
             font-family: "Lexend", "Helvetica Neue", "Helvetica", sans-serif;
             margin: 1rem;
             padding: 0;
             font-size: 16px;
+            background: hsl(200deg 55% 80%);
         }
 
         header {
-            background-color: #999;
-            color: #eee;
-            height: 0vh;
+            color: #000;
         }
 
         main {
@@ -30,6 +35,7 @@
             margin: 1em auto;
             display: flex;
             flex-wrap: wrap;
+            padding-bottom: 2rem;
         }
 
         section {
@@ -61,12 +67,15 @@
 
         ol li {
             counter-increment: my-counter;
-            padding-left: 0.5rem;
             margin-bottom: 1rem;
+            width: 29rem;
+            margin-left: 1rem;
+            padding-left: 0.5rem;
         }
 
         ol li::marker {
-            content: counter(my-counter) ".";
+            content: counter(my-counter) ")";
+            margin-right: 7rem;
         }
 
         ol li::marker.glow {
@@ -104,13 +113,55 @@
 
         textarea {
             height: 3.3rem;
-            width: 28rem;
+            width: 22rem;
+        }
+        .tips {
+            background-color:#fff;
+            font-size: 13px;
+            font-weight: 300;
+            width: 95vw;
+        }
+        .tips ul {
+            columns: 3;
+            padding: 1rem;
+            margin-left: 1rem;
+            width: 100%;
+        }
+        .tips ul li {
+            padding-bottom: 1rem;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .tips h2 {
+            margin: 0.5rem;
+        }
+        @media screen and (max-width:600px) {
+            main {
+                background-color: #fff;
+                color: #222;
+                padding: 1rem 0;
+                margin: 1em auto;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .tips ul {
+                columns: 1;
+                padding: 0;
+                margin-left: 1rem;
+            }
+            ol {
+                width: 85vw;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>Job Interview Questions</h1>
+    <header>
+        <h1>Interview Questions</h1>
+        <h3>Answers for "Do you have any questions?"</h3>
+    </header>
     <main>
     </main>
     <footer>
@@ -143,13 +194,14 @@
                         out += app.makeSection(section, app.state.questions["Questions"][section]);
                     });
                     $("main").innerHTML = out;
-                    $("footer").innerHTML = app.makeSection("Tips", app.state.questions["Tips"], 'ul');
+                    $("header").innerHTML += app.makeSection("Tips", app.state.questions["Tips"], 'ul', 'tips');
                 },
-                makeSection: function(title, items, type = 'ol') {
+                makeSection: function(title, items, type = 'ol', cls='') {
+                    if (cls) cls = ` class="${cls}"`;
                     const key = title.replace(/\W/, '').toLowerCase();
-                    let out = `<section><h2>${title}</h2><${type}>`;
+                    let out = `<section${cls}><h2>${title}</h2><${type}>`;
                     items.forEach((item, idx) => {
-                        out += `<li>${item}<div class='answer hidden'><textarea cols='40' rows='5' id='answer[${key}][${idx}]'></textarea></li>`;
+                        out += `<li>${item}<div class='answer hidden'><textarea cols='20' rows='5' id='answer[${key}][${idx}]'></textarea></li>`;
                     });
                     out += `</${type}></section>`;
 
